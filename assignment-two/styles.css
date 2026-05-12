@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --background-color: #000000;
+    --light-black: #141414;
+    --accent-color: #FD4808;
+    --text-color: #EFEFEE;
+}
+
+body {
+    background-color: var(--background-color);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+    flex-direction: row;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #EFEFEE;
+    font-weight: 400;
+}
+
+.get-started button {
+    font-size: 14px;
+    padding: 10px 20px;
+    background-color: var(--light-black);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0.5rem;
+}
+.heading h1{
+    font-size: 102px;
+    color: var(--text-color);
+    text-align: center;
+}
+.filter-options{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+}
+.filter-btn{
+    padding: 10px 20px;
+    background-color: var(--light-black);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1.5rem;
+}
+
+.filter-btn.active{
+    background-color: var(--accent-color);
+}
+.blog-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.card{
+    background-color: var(--light-black);
+    border-radius: 10px;
+    width: 300px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex:1;
+}
+.category{
+    font-size: 14px;
+    background-color: #541D0A;
+    color: #D77B50;
+    width: fit-content;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    border-radius: 1.5rem;
+    font-weight: 500;
+}
+.post-title{
+    font-size: 18px;
+    font-weight: 600;
+    color:var(--text-color)
+}
+.date{
+    font-size: 14px;
+    color: #7D7E7E;
+}
