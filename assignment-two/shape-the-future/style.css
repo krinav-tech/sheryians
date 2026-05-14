@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --background-color: #F0F0F0;
+    --primary-color: #510509;
+
+    --letter-spacng: -0.7px;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Bricolage Grotesque", sans-serif;
+    background-color: var(--background-color);
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    }
+
+/*
+   Left side CSS
+*/
+
+.left{
+    height: 70%;
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: space-between;
+    padding: 100px 0 0 20px;
+}
+
+.asterisk-icon img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+nav ul.menu {
+    display:flex;
+    flex-direction: column;
+    list-style:none;
+}
+.menu-item{
+    font-size: 25px;
+    color: var(--primary-color);
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logo-text{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacng);
+    cursor: pointer;
+}
+
+
+/*
+   Right side CSS
+*/
+
+.right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 100px;
+    /* background-color: antiquewhite; */
+}
+
+
+h1{
+    font-size: 50px;
+    color: var(--primary-color);
+    letter-spacing: var(--letter-spacng);
+    word-spacing: 0.5px;
+    line-height: 50px;
+    font-weight: 500;
+}
+.text-span{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.heading-image{
+    padding-top: 5px;
+}
+
+.heading-image img{
+    width: 75px;
+    height: auto;
+}
+
+.main-center{
+    padding-left: 180px;
+}
+.light-text{
+    color: #AC9898;
+}
+
+.description{
+    padding: 30px 0;
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+.images{
+    display:flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+.images img{
+    width: 200px;
+    height: 250px;
+    border-radius: 1.5rem;
+    object-fit: cover;
+}
+
+.main-bottom{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+    text-align: center;
+}
