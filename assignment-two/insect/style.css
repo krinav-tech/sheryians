@@ -1,0 +1,288 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-white: #FEFEFE;
+    --primary-red: #BD3D31;
+    --secondary-text:#0B201B;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+header {
+    width: 93%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.header-right {
+    width: 70%;
+}
+
+.header-right ul {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 60px;
+    list-style: none;
+    cursor: pointer;
+    color: #FEFEFE;
+}
+
+nav ul li a {
+    color: var(--primary-white);
+    text-decoration: none;
+}
+
+.logo{
+    color: var(--secondary-text);
+    cursor: pointer;
+}
+
+.search {
+    background-color: #F0F0F0;
+    padding: 10px 20px;
+    border-radius: 1.5rem;
+}
+
+input {
+    border: none;
+    background-color: #F0F0F0;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+input:focus,
+input:focus-visible {
+    border: none;
+    outline: none;
+}
+
+.hero {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+
+/* left side of css  */
+
+.hero .left {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 125px;
+    padding-left: 3rem;
+}
+
+.left h1 {
+    font-family: "Playfair", serif;
+    font-style: italic;
+    font-size: 75px;
+    color: var(--secondary-text);
+    writing-mode: vertical-lr;
+    rotate: 180deg;
+
+}
+
+ul.list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.item span {
+    display: block;
+}
+.item::marker{
+    color: var(--primary-red);
+}
+.item .label{
+    font-weight: 600;
+}
+.item .value{
+    font-weight: 400;
+    color: var(--secondary-text);
+}
+
+/* right side of css */
+
+section .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--primary-red);
+}
+
+.right .heading {
+    width: 300px;
+    font-size: 50px;
+    font-family: "Playfair", serif;
+    font-weight: 400;
+    color: var(--primary-white);
+
+}
+
+.info-card {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+.insect-fig {
+    width: 80px;
+    height: 112px;
+    object-fit: cover;
+}
+
+.separator {
+    width: 2px;
+    height: 85%;
+    border-right: 2px solid var(--primary-white);
+}
+
+.icon-box-list p {
+    font-size: 14px;
+}
+
+.icon-box-list {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.ib-list-item {
+    display: flex;
+    flex-direction: row;
+    color: var(--primary-white);
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.ib-list-item i{
+    font-size: 25px;
+}
+.price{
+    color: var(--primary-white);
+}
+.scaleton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary-white);
+    font-size: 14px;
+}
+.toggle-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tgl-grop-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.toggle-slider{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: #C9796D;
+    border-radius: 2rem;
+}
+
+.toggle-slider::after {
+    position: absolute;
+    content: "";
+    top: 1rem;
+    left: 1rem;
+    transform: translate(-13px, -14px);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: var(--primary-white);
+}
+label.span-text{
+    color: var(--primary-white);
+}
+
+input[type="checkbox"]:checked + .toggle-slider::after{
+    translate: 22px 0;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.pricing-cta{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+button.cta-btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.insect {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.insect img {
+    width: 100%;
+    object-fit: cover;
+    /* position: absolute; */
+}
