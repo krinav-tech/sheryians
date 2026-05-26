@@ -154,7 +154,7 @@ main {
     font-size: 5rem;
     line-height: 4.5rem;
     font-weight: 400;
-    background-image: url(assets/black-text.png);
+    background-image: url(./assets/black-text.png);
     background-size: cover;
     background-position: center;
     color: transparent;
@@ -163,7 +163,7 @@ main {
 
 .heading h1 span {
     /* color: var(--green-accent); */
-    background-image: url(assets/grren-text.png);
+    background-image: url(./assets/grren-text.png);
     background-clip: text;
 }
 
@@ -333,7 +333,7 @@ section.product-carousel {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: url(assets/banner.png);
+    background: url(./assets/banner.png);
     background-position: 0;
     background-repeat: no-repeat;
     border-radius: 2rem;
