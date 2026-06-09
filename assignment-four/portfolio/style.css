@@ -134,6 +134,15 @@ nav {
   position: relative;
 }
 
+.batak i{
+  position: absolute;
+  top: 10px;
+  font-size: 1.5rem;
+  right: 10px;
+  transform: rotate(45deg);
+  color: var(--color-white);
+}
+
 .play-btn {
   width: 60px;
   height: 60px;
